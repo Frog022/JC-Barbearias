@@ -1,0 +1,12 @@
+{
+  "name": "jc-barbearias",
+  "version": "1.0.0",
+  "description": "Site para a barbearia JC Barbearias",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

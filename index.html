@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Barbearias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JC Barbearias</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>
+                    Na JC Barbearias, combinamos a tradição da barbearia clássica com as técnicas mais modernas. Nosso objetivo é proporcionar uma experiência de cuidado e estilo, em um ambiente acolhedor e profissional. Nossos barbeiros são especialistas em cortes e barbas, prontos para renovar seu visual.
+                </p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Serviços e Combos</h2>
+                <div class="service-list-container">
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Tirar Barba</h3>
+                            <p>No estabelecimento · 15min</p>
+                        </div>
+                        <div class="service-price">R$ 25,00</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Barba modelada</h3>
+                            <p>No estabelecimento · 20min</p>
+                        </div>
+                        <div class="service-price">R$ 30,00</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Corte + Barba + Limpeza de Pele</h3>
+                            <p>No estabelecimento · 1h 5min</p>
+                        </div>
+                        <div class="service-price">R$ 85,00</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Limpeza de Pele</h3>
+                            <p>No estabelecimento · 15min</p>
+                        </div>
+                        <div class="service-price">R$ 25,00</div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Corte + barba + pigmentações na barba</h3>
+                            <p>No estabelecimento · 1h 10min</p>
+                        </div>
+                        <div class="service-price">R$ 65,00</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Corte e Cavanhaque</h3>
+                            <p>1 serviço · 4 atendimentos</p>
+                        </div>
+                        <div class="service-price">R$ 154,00 / 1 mês</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Corte Mensal Ilimitado</h3>
+                            <p>1 serviço · 8 atendimentos</p>
+                        </div>
+                        <div class="service-price">R$ 140,00 / 1 mês</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Corte e Barba Mensal</h3>
+                            <p>1 serviço · 4 atendimentos</p>
+                        </div>
+                        <div class="service-price">R$ 168,00 / 1 mês</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-details">
+                            <h3>Corte mensal</h3>
+                            <p>1 serviço · 4 atendimentos</p>
+                        </div>
+                        <div class="service-price">R$ 100,80 / 1 mês</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking">
+            <div class="container">
+                <h2>Agende seu Horário</h2>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Serviço Desejado:</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Selecione um serviço --</option>
+                            <option value="Corte de Cabelo">Corte de Cabelo</option>
+                            <option value="Barba">Barba</option>
+                            <option value="Combo">Combo Cabelo + Barba</option>
+                        </select>
+                    </div>
+                    <button type="submit">Enviar pelo WhatsApp</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <section id="location">
+    <div class="container">
+        <h2>Localização e Horário</h2>
+        <div class="location-content">
+            <div class="location-details">
+                <h3>Localização</h3>
+                <p>Av. Fábio Franco, 12</p>
+                <p>CEP: 27943-700</p>
+                <p>Macaé, RJ</p>
+            </div>
+            <div class="opening-hours">
+                <h3>Horário de Funcionamento</h3>
+                <ul>
+                    <li><span>Segunda:</span> 10:00 - 18:30</li>
+                    <li><span>Terça:</span> 10:00 - 18:30</li>
+                    <li><span>Quarta:</span> 10:00 - 20:00</li>
+                    <li><span>Quinta:</span> 09:00 - 19:00</li>
+                    <li><span>Sexta:</span> 08:00 - 19:30</li>
+                    <li><span>Sábado:</span> Fechado</li>
+                    <li><span>Domingo:</span> Fechado</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JC Barbearias. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

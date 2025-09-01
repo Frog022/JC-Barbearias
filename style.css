@@ -1,0 +1,330 @@
+/* Importação de Fontes                    */
+/* ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap');
+
+/* ========================================================= */
+/* Estilos Globais                     */
+/* ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Fonte para o corpo do texto */
+    background-color: #202020;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ========================================================= */
+/* Animações em CSS                    */
+/* ========================================================= */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================================= */
+/* Cabeçalho                         */
+/* ========================================================= */
+header {
+    background-color: #000000;
+    color: #ffffff; /* Dourado */
+    padding: 2rem 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif; /* Fonte para o título principal */
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* ========================================================= */
+/* Seções Gerais                     */
+/* ========================================================= */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif; /* Fonte para os títulos das seções */
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    animation: slideInUp 0.8s ease-out;
+}
+
+/* ========================================================= */
+/* Sobre Nós                         */
+/* ========================================================= */
+#about {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+    background-color: #2c2c2c;
+}
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+/* ========================================================= */
+/* Serviços e Combos                      */
+/* ========================================================= */
+#services {
+    background-color: #1a1a1a;
+    padding: 4rem 0;
+}
+
+.service-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    animation: slideInUp 0.6s ease-out;
+    opacity: 0; /* Inicia com opacidade zero para a animação */
+    animation-fill-mode: forwards; /* Mantém o estado final da animação */
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-details h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.service-details p {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.service-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffd700; /* Dourado */
+}
+
+/* Delays para animação de cada item */
+.service-list-container .service-item:nth-child(1) { animation-delay: 0.1s; }
+.service-list-container .service-item:nth-child(2) { animation-delay: 0.2s; }
+.service-list-container .service-item:nth-child(3) { animation-delay: 0.3s; }
+.service-list-container .service-item:nth-child(4) { animation-delay: 0.4s; }
+.service-list-container .service-item:nth-child(5) { animation-delay: 0.5s; }
+.service-list-container .service-item:nth-child(6) { animation-delay: 0.6s; }
+.service-list-container .service-item:nth-child(7) { animation-delay: 0.7s; }
+.service-list-container .service-item:nth-child(8) { animation-delay: 0.8s; }
+.service-list-container .service-item:nth-child(9) { animation-delay: 0.9s; }
+
+/* ========================================================= */
+/* Agendamento                         */
+/* ========================================================= */
+#booking {
+    background-color: #2c2c2c;
+}
+
+#booking-form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid #444;
+    animation: slideInUp 1s ease-out;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+#booking-form button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffd700;
+    color: #1a1a1a;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#booking-form button:hover {
+    background-color: #e6c200;
+}
+
+/* ========================================================= */
+/* Rodapé                           */
+/* ========================================================= */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* ========================================================= */
+/* Responsividade                      */
+/* ========================================================= */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .service-price {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* ========================================================= */
+/* Localização e Horário                  */
+/* ========================================================= */
+#location {
+    background-color: #1a1a1a;
+    padding: 4rem 0;
+}
+
+#location h2 {
+    color: #ffd700;
+    margin-bottom: 3rem;
+    animation: slideInUp 0.8s ease-out;
+}
+
+.location-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    text-align: left;
+}
+
+.location-details, .opening-hours {
+    background-color: #2c2c2c;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    max-width: 400px;
+    animation: slideInUp 0.8s ease-out forwards;
+}
+
+.location-details {
+    animation-delay: 0.1s;
+}
+
+.opening-hours {
+    animation-delay: 0.3s;
+}
+
+.location-details h3, .opening-hours h3 {
+    font-size: 1.8rem;
+    color: #ffd700;
+    margin-bottom: 1.5rem;
+}
+
+.location-details p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.opening-hours ul {
+    list-style: none;
+}
+
+.opening-hours li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.opening-hours li span {
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    width: 120px;
+}
+
+/* Responsividade para a nova seção */
+@media (max-width: 768px) {
+    .location-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .location-details, .opening-hours {
+        max-width: 100%;
+    }
+}
